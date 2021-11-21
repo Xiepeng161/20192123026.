@@ -35,29 +35,27 @@
 <br>
 扩展事件流：<pre>1.提交至暂存区,但未提交至本地仓库(add 了,没commit)
 <br>
- 查看状态: git status
+查看状态: git status
 <br>
-删除提交至暂存区的某个文件:
-                git reset HEAD filename
+删除提交至暂存区的某个文件:git reset HEAD filename
 <br>
-删除提交至暂存区的所有文件:
-                git reset HEAD
+删除提交至暂存区的所有文件:git reset HEAD
 <br>
- 2.提交至本地仓库但未推至远程仓库
+2.提交至本地仓库但未推至远程仓库
 <br>
 查看提交日志: git log
-    <br>
-    回滚本地仓库: git reset --hard commit_id
+<br>
+回滚本地仓库: git reset --hard commit_id
 <br>
 3.推送至远程仓库实现回滚
 <br>
 查看提交日志: git log
-    <br>
-                回滚本地仓库: git reset --hard commit_id
-    <br>
-                强制推送到远程仓库:
-    <br>
-                git push origin HELD --force</pre>
+<br>
+回滚本地仓库: git reset --hard commit_id
+<br>
+强制推送到远程仓库:
+<br>
+git push origin HELD --force</pre>
 <br>
 结论:<pre>当参与者收到系统发送的任务运行成功或者其他异常信息的时候，用例结束。</pre>
 <br>
