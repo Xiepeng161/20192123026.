@@ -21,43 +21,44 @@
 
 <strong>基本事件流:</strong>
 
-1.参与者将github找到自己所需的项目通过ssh复制到系统（PyCharm）的URL中
+    1.参与者将github找到自己所需的项目通过ssh复制到系统（PyCharm）的URL中
 
-2.编辑仓库信息；
+    2.编辑仓库信息；
 
-3.点击创建仓库；
+    3.点击创建仓库；
 
-4.获取克隆地址，并拉去代码；
+    4.获取克隆地址，并拉去代码；
 
-5.远程操作；
+    5.远程操作；
 
-6.获取远程仓库授权（github+gitee）
+    6.获取远程仓库授权（github+gitee）
 
-7.获取gitee授权；
+    7.获取gitee授权；
 
-8.克隆项目并提交代码。
+    8.克隆项目并提交代码。
 
-<strong>扩展事件流：</strong>1.提交至暂存区,但未提交至本地仓库(add 了,没commit)；
+<strong>扩展事件流：</strong>
+    1.提交至暂存区,但未提交至本地仓库(add 了,没commit)；
 
-                            查看状态: git status
+    查看状态: git status
 
-                            删除提交至暂存区的某个文件:git reset HEAD filename
+    删除提交至暂存区的某个文件:git reset HEAD filename
 
-                            删除提交至暂存区的所有文件:git reset HEAD
+    删除提交至暂存区的所有文件:git reset HEAD
 
-                           2.提交至本地仓库但未推至远程仓库；
+    2.提交至本地仓库但未推至远程仓库；
 
-                            查看提交日志: git log
+    查看提交日志: git log
 
-                            回滚本地仓库: git reset --hard commit_id
+    回滚本地仓库: git reset --hard commit_id
 
-                           3.推送至远程仓库实现回滚；
+    3.推送至远程仓库实现回滚；
 
-                            查看提交日志: git log
+    查看提交日志: git log
 
-                            回滚本地仓库: git reset --hard commit_id
+    回滚本地仓库: git reset --hard commit_id
 
-                            强制推送到远程仓库:git push origin HELD --force
+    强制推送到远程仓库:git push origin HELD --force
 
 <strong>结论:</strong>当参与者收到系统发送的任务运行成功或者其他异常信息的时候，用例结束。
 
@@ -66,7 +67,7 @@
 <strong>业务规则:</strong>只有当仓库创建完成后才可以执行后面的操作
 </font>
 </pre>
-<img width="400px" height="450px" src="./image/xp.jpg">
+<img width="500px" height="450px" src="./image/xp.jpg">
 
 
 </body>
