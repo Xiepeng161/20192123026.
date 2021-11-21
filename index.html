@@ -5,29 +5,65 @@
     <title>Title</title>
 </head>
 <body>
-用例名称:	<pre>Repositories(仓库)项目代码托管</pre>>
+用例名称:	<pre>Repositories(仓库)项目代码托管。</pre>
 <br>
 用例编号:	<pre>RPCH</pre>
 <br>
-用例描述:	<pre>该用例描述一个在github上的项目通过ssh复制到PyCharm、IDEA等类似软件上的行为</pre>
+用例描述:	<pre>该用例描述一个在github上的项目通过ssh复制到PyCharm、IDEA等类似软件上的行为。</pre>
 <br>
-触发器:<pre>该项目在github上提交到软件上时，用例触发</pre>
+触发器:<pre>该项目在github上提交到软件上时，用例触发。</pre>
 <br>
-前置条件:<pre>普通用户需要到github上完成登录</pre>
+前置条件:<pre>普通用户需要到github上完成登录。</pre>
 <br>
-后置条件&nbsp; &nbsp;	找到需要的项目然后搜索，如果开源，则下载
+后置条件:<pre>找到需要的项目然后搜索，如果开源，则下载。</pre>>
 <br>
-基本事件流&nbsp; &nbsp;	1.	参与者将github找到自己所需的项目通过ssh复制到系统（PyCharm）的URL中
+基本事件流:<pre>1.	参与者将github找到自己所需的项目通过ssh复制到系统（PyCharm）的URL中;
+    <br>
+2.编辑仓库信息；
+    <br>
+3.点击创建仓库；
+    <br>
+    4.获取克隆地址，并拉去代码；
+    <br>
+    5.远程操作,
+    <br>
+    6.获取远程仓库授权（github+gitee）
+    <br>
+    7.获取gitee授权；
+    <br>
+    8.克隆项目并提交代码。</pre>>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.
+扩展事件流：<pre>1.提交至暂存区,但未提交至本地仓库(add 了,没commit)
 <br>
-扩展事件流&nbsp; &nbsp;
+ 查看状态: git status
 <br>
-结论&nbsp; &nbsp;
+删除提交至暂存区的某个文件:
+                git reset HEAD filename
 <br>
-数据需求&nbsp; &nbsp;
+删除提交至暂存区的所有文件:
+                git reset HEAD
 <br>
-业务规则&nbsp; &nbsp;
+ 2.提交至本地仓库但未推至远程仓库
+<br>
+查看提交日志: git log
+    <br>
+    回滚本地仓库: git reset --hard commit_id
+<br>
+3.推送至远程仓库实现回滚
+<br>
+查看提交日志: git log
+    <br>
+                回滚本地仓库: git reset --hard commit_id
+    <br>
+                强制推送到远程仓库:
+    <br>
+                git push origin HELD --force</pre>
+<br>
+结论:<pre>当参与者收到系统发送的任务运行成功或者其他异常信息的时候，用例结束。</pre>>
+<br>
+数据需求：<pre></pre>>
+<br>
+业务规则:<pre>只有当仓库创建完成后才可以执行后面的操作</pre>>
 <br>
 
 </body>
